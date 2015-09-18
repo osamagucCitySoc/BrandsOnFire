@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i24-KX-LSb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Brands On Fire-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +17,137 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zed-sI-2Cq">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zzi-eX-m18"/>
+                                </constraints>
+                                <state key="normal" title="Women">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zzi-eX-m18"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="zzi-eX-m18"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oa-Kh-WPx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4x2-uf-P8d"/>
+                                </constraints>
+                                <state key="normal" title="Men">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4x2-uf-P8d"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4x2-uf-P8d"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjK-Mv-Uz4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3bx-E0-Mdw"/>
+                                </constraints>
+                                <state key="normal" title="Kids">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3bx-E0-Mdw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3bx-E0-Mdw"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zed-sI-2Cq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="92b-y9-cbF"/>
+                            <constraint firstItem="QjK-Mv-Uz4" firstAttribute="top" secondItem="8oa-Kh-WPx" secondAttribute="bottom" constant="8" id="CeW-wW-rdT"/>
+                            <constraint firstItem="QjK-Mv-Uz4" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Fhe-JX-unF"/>
+                            <constraint firstItem="Zed-sI-2Cq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="MAJ-aP-mQ7"/>
+                            <constraint firstItem="8oa-Kh-WPx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Ukg-ga-w0t"/>
+                            <constraint firstItem="QjK-Mv-Uz4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ov3-bl-2CG"/>
+                            <constraint firstItem="8oa-Kh-WPx" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="vZU-N1-mEH"/>
+                            <constraint firstItem="Zed-sI-2Cq" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="xlW-4e-QAz"/>
+                            <constraint firstItem="8oa-Kh-WPx" firstAttribute="top" secondItem="Zed-sI-2Cq" secondAttribute="bottom" constant="8" id="y1H-qN-gOJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Zed-sI-2Cq"/>
+                                <exclude reference="8oa-Kh-WPx"/>
+                                <exclude reference="QjK-Mv-Uz4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="92b-y9-cbF"/>
+                                <exclude reference="MAJ-aP-mQ7"/>
+                                <exclude reference="xlW-4e-QAz"/>
+                                <exclude reference="Ukg-ga-w0t"/>
+                                <exclude reference="vZU-N1-mEH"/>
+                                <exclude reference="y1H-qN-gOJ"/>
+                                <exclude reference="CeW-wW-rdT"/>
+                                <exclude reference="Fhe-JX-unF"/>
+                                <exclude reference="ov3-bl-2CG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Zed-sI-2Cq"/>
+                                <include reference="8oa-Kh-WPx"/>
+                                <include reference="QjK-Mv-Uz4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="92b-y9-cbF"/>
+                                <include reference="MAJ-aP-mQ7"/>
+                                <include reference="xlW-4e-QAz"/>
+                                <include reference="Ukg-ga-w0t"/>
+                                <include reference="vZU-N1-mEH"/>
+                                <include reference="y1H-qN-gOJ"/>
+                                <include reference="CeW-wW-rdT"/>
+                                <include reference="Fhe-JX-unF"/>
+                                <include reference="ov3-bl-2CG"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Brands On Fire" id="oKR-PD-g9d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1242" y="399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0tq-UD-int">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i24-KX-LSb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fvJ-EQ-BsK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="14v-pO-1sW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjS-mX-daC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367.5" y="-270.75"/>
         </scene>
     </scenes>
 </document>
