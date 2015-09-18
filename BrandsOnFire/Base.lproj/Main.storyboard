@@ -23,7 +23,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="zzi-eX-m18"/>
                                 </constraints>
-                                <state key="normal" title="Women">
+                                <state key="normal" title="Women &gt;">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -36,13 +36,16 @@
                                         <include reference="zzi-eX-m18"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="womenClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NzQ-Ly-vs6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oa-Kh-WPx">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4x2-uf-P8d"/>
                                 </constraints>
-                                <state key="normal" title="Men">
+                                <state key="normal" title="Men &gt;">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -61,7 +64,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3bx-E0-Mdw"/>
                                 </constraints>
-                                <state key="normal" title="Kids">
+                                <state key="normal" title="Kids &gt;">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -126,6 +129,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Brands On Fire" id="oKR-PD-g9d"/>
+                    <connections>
+                        <segue destination="72c-kc-Jdo" kind="push" identifier="subCategorySeg" id="79h-8K-QeV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,6 +154,136 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjS-mX-daC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="367.5" y="-270.75"/>
+        </scene>
+        <!--Brands On Fire-->
+        <scene sceneID="Woj-a2-szK">
+            <objects>
+                <viewController id="72c-kc-Jdo" customClass="MainCategoryChooser" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TuE-Ap-9MN"/>
+                        <viewControllerLayoutGuide type="bottom" id="qzJ-qg-Pay"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c2U-rz-S1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYp-6X-wjt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rbB-xw-KFG"/>
+                                </constraints>
+                                <state key="normal" title="V.I.P &gt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rbB-xw-KFG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="rbB-xw-KFG"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="vipClicked:" destination="72c-kc-Jdo" eventType="touchUpInside" id="Hd3-CT-Qzd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2X1-Zq-D6j">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3Jf-fx-uPn"/>
+                                </constraints>
+                                <state key="normal" title="Normal &gt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Jf-fx-uPn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3Jf-fx-uPn"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="normalClicked:" destination="72c-kc-Jdo" eventType="touchUpInside" id="crW-aI-kuL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2X1-Zq-D6j" firstAttribute="trailing" secondItem="c2U-rz-S1Z" secondAttribute="trailingMargin" id="A3F-3S-n5u"/>
+                            <constraint firstItem="2X1-Zq-D6j" firstAttribute="top" secondItem="TYp-6X-wjt" secondAttribute="bottom" constant="8" id="BaN-Yy-qkU"/>
+                            <constraint firstItem="TYp-6X-wjt" firstAttribute="trailing" secondItem="c2U-rz-S1Z" secondAttribute="trailingMargin" id="EOH-ld-Jz0"/>
+                            <constraint firstItem="TYp-6X-wjt" firstAttribute="top" secondItem="TuE-Ap-9MN" secondAttribute="bottom" constant="8" id="bUt-6i-Ofn"/>
+                            <constraint firstItem="TYp-6X-wjt" firstAttribute="leading" secondItem="c2U-rz-S1Z" secondAttribute="leadingMargin" id="cPS-Ml-J9E"/>
+                            <constraint firstItem="2X1-Zq-D6j" firstAttribute="leading" secondItem="c2U-rz-S1Z" secondAttribute="leadingMargin" id="qi6-yI-JE2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="TYp-6X-wjt"/>
+                                <exclude reference="2X1-Zq-D6j"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="bUt-6i-Ofn"/>
+                                <exclude reference="cPS-Ml-J9E"/>
+                                <exclude reference="EOH-ld-Jz0"/>
+                                <exclude reference="qi6-yI-JE2"/>
+                                <exclude reference="A3F-3S-n5u"/>
+                                <exclude reference="BaN-Yy-qkU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="TYp-6X-wjt"/>
+                                <include reference="2X1-Zq-D6j"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="bUt-6i-Ofn"/>
+                                <include reference="cPS-Ml-J9E"/>
+                                <include reference="EOH-ld-Jz0"/>
+                                <include reference="qi6-yI-JE2"/>
+                                <include reference="A3F-3S-n5u"/>
+                                <include reference="BaN-Yy-qkU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Brands On Fire" id="5xs-fR-Dt7"/>
+                    <connections>
+                        <segue destination="aKt-p1-A1e" kind="push" identifier="catSeg" id="bcz-wX-P38"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qby-vw-RbT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="399"/>
+        </scene>
+        <!--Brands On Fire-->
+        <scene sceneID="Zgg-bK-og9">
+            <objects>
+                <tableViewController id="aKt-p1-A1e" customClass="CategoryTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DBN-4E-B88">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="catCell" id="heh-sj-v43">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="heh-sj-v43" id="fde-Td-Ctw">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aKt-p1-A1e" id="adl-X2-HlD"/>
+                            <outlet property="delegate" destination="aKt-p1-A1e" id="xWK-8X-bM0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Brands On Fire" id="FWv-0r-npD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Bd-N9-8xB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2779.5" y="-24"/>
         </scene>
     </scenes>
 </document>

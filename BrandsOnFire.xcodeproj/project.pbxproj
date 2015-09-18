@@ -14,6 +14,8 @@
 		E80195FF1BAC593200E1C00D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80195FE1BAC593200E1C00D /* Images.xcassets */; };
 		E80196021BAC593200E1C00D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E80196001BAC593200E1C00D /* LaunchScreen.xib */; };
 		E801960E1BAC593200E1C00D /* BrandsOnFireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E801960D1BAC593200E1C00D /* BrandsOnFireTests.m */; };
+		E80196191BAC8F9000E1C00D /* MainCategoryChooser.m in Sources */ = {isa = PBXBuildFile; fileRef = E80196181BAC8F9000E1C00D /* MainCategoryChooser.m */; };
+		E801961C1BAC90F900E1C00D /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E801961B1BAC90F900E1C00D /* CategoryTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		E80196071BAC593200E1C00D /* BrandsOnFireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrandsOnFireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E801960C1BAC593200E1C00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E801960D1BAC593200E1C00D /* BrandsOnFireTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrandsOnFireTests.m; sourceTree = "<group>"; };
+		E80196171BAC8F9000E1C00D /* MainCategoryChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCategoryChooser.h; sourceTree = "<group>"; };
+		E80196181BAC8F9000E1C00D /* MainCategoryChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCategoryChooser.m; sourceTree = "<group>"; };
+		E801961A1BAC90F900E1C00D /* CategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewController.h; sourceTree = "<group>"; };
+		E801961B1BAC90F900E1C00D /* CategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				E80195FE1BAC593200E1C00D /* Images.xcassets */,
 				E80196001BAC593200E1C00D /* LaunchScreen.xib */,
 				E80195F11BAC593200E1C00D /* Supporting Files */,
+				E80196171BAC8F9000E1C00D /* MainCategoryChooser.h */,
+				E80196181BAC8F9000E1C00D /* MainCategoryChooser.m */,
+				E801961A1BAC90F900E1C00D /* CategoryTableViewController.h */,
+				E801961B1BAC90F900E1C00D /* CategoryTableViewController.m */,
 			);
 			path = BrandsOnFire;
 			sourceTree = "<group>";
@@ -221,6 +231,8 @@
 			files = (
 				E80195FA1BAC593200E1C00D /* ViewController.m in Sources */,
 				E80195F71BAC593200E1C00D /* AppDelegate.m in Sources */,
+				E80196191BAC8F9000E1C00D /* MainCategoryChooser.m in Sources */,
+				E801961C1BAC90F900E1C00D /* CategoryTableViewController.m in Sources */,
 				E80195F41BAC593200E1C00D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
